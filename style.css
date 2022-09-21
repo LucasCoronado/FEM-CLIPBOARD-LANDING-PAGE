@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.mt {
+  margin-top: 60px;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Bai Jamjuree", sans-serif;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+body section {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 25px;
+  max-width: 500px;
+}
+body section img {
+  width: 90%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+body header {
+  background-image: url(./images/bg-header-mobile.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-top: 20px;
+}
+body header img {
+  width: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+body h2 {
+  font-size: 30px;
+  color: hsl(210deg, 10%, 33%);
+  padding-top: 30px;
+}
+body p {
+  padding-top: 20px;
+  font-size: 17px;
+  color: hsl(201deg, 11%, 66%);
+  line-height: 25px;
+  opacity: 70%;
+}
+
+.btn {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 40px;
+}
+.btn button {
+  width: 280px;
+  height: 40px;
+  border-radius: 30px;
+  border: none;
+  color: white;
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+.btn .btnIos {
+  background-color: hsl(171deg, 66%, 44%);
+  box-shadow: 0px 2px hsl(171deg, 66%, 40%);
+}
+.btn .btnMac {
+  background-color: hsl(233deg, 100%, 69%);
+  box-shadow: 0px 2px hsl(233deg, 100%, 65%);
+}
+.btn button:hover {
+  opacity: 80%;
+  cursor: pointer;
+}
+
+.icon div img {
+  width: 50px;
+  margin: 90px auto 10px auto;
+}
+
+.logos img {
+  max-width: 200px;
+}
+
+footer {
+  background-color: #f5f6f8;
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+footer .imgLogo {
+  max-width: 55px;
+  margin: 50px;
+}
+footer a {
+  text-decoration: none;
+  color: hsl(210deg, 10%, 33%);
+}
+footer .social {
+  padding: 40px;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 40px;
+}
+
+/*# sourceMappingURL=style.css.map */
