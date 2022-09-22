@@ -107,7 +107,14 @@ footer .imgLogo {
   max-width: 55px;
   margin: 50px;
 }
-footer a {
+footer span {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+footer span a {
   text-decoration: none;
   color: hsl(210deg, 10%, 33%);
 }
@@ -116,6 +123,89 @@ footer .social {
   display: flex;
   flex-flow: row nowrap;
   gap: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    width: 100vw;
+    background-image: url(./images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  .btn {
+    flex-flow: row nowrap;
+  }
+  .btn button {
+    width: 200px;
+  }
+  main {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+  main .flex-row span {
+    width: 80vw;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 80px;
+  }
+  main .flex-row span div {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+  }
+  main .flex-row span div h2 {
+    font-size: 25px;
+  }
+  main .flex-row span div p {
+    font-size: 14px;
+    text-align: start;
+  }
+  main .flex-row span img {
+    max-width: 720px;
+  }
+  main .clipboard {
+    max-width: 60vw;
+    padding: 0px;
+  }
+  main .clipboard img {
+    max-width: 900px;
+  }
+  main .icon {
+    max-width: 70vw;
+  }
+  main .icon span {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+  }
+  main .icon span div {
+    max-width: 33%;
+  }
+  main .logos {
+    max-width: 70vw;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1.5rem;
+  }
+  main .logos img {
+    min-width: 100px;
+  }
+}
+footer {
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+footer span {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr, 1fr;
 }
 
 /*# sourceMappingURL=style.css.map */
